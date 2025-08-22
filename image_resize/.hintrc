@@ -18,5 +18,12 @@
       }
     ],
     "no-inline-styles": "off"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 128",
+    "not chrome <= 129",
+    "not samsung <= 25"
+  ]
 }
