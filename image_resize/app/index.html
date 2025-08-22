@@ -14,7 +14,7 @@
 
 <body>
     <div class="container center-align">
-        <h3><i class="fas fa-image"></i> Image Resize</h3>
+        <h3><i class="fas fa-images"></i> ImageShrink</h3>
         <p>Resize your images easily and quickly.</p>
         <form id="image-form">
             <div class="file-field input-field">
@@ -25,9 +25,29 @@
                 <div class="file-path-wrapper">
                     <input type="text" class="file-path validate" placeholder="Upload an image">
                 </div>
+                <p>
+                    <strong>Quality: </strong>
+                    <em>The lower the quality, the smaller the filesize</em>
+                </p>
+                <p class="range-field">
+                    <input type="range" min="0" max="100" id="slider">
+                    <span class="thumb" style="height: 0px; width: 0px; top: 10px; margin-left: 7px; left: 0px;">
+                        <span class="value">0</span>
+                    </span>
+                </p>
+                <div>
+                    <input type="submit" class="black btn" value="Resize">
+                </div>
             </div>
         </form>
+        <div class="card-output">
+            <div class="card-content">
+                Output Path:
+                <span id="output-path"></span>
+            </div>
+        </div>
     </div>
+    <script src="js/materialize.min.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@
           "-webkit-mask-image"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }
