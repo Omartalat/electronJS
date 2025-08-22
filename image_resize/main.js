@@ -25,6 +25,19 @@ const menu = [
   { role: "fileMenu" },
   { role: "editMenu" },
   { role: "viewMenu" },
+  ...(isDev
+    ? [
+        {
+          label: "dev",
+          submenu: [
+            { role: "reload" },
+            { role: "forcereload" },
+            { type: "separator" },
+            { role: "toggledevtools" },
+          ],
+        },
+      ]
+    : []),
   {
     label: "About",
     click: () => {

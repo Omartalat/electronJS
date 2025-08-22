@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>Image Resize</title>
 </head>
 
 <body>
-    <h1>Image Resize</h1>
+    <div class="container center-align">
+        <h3><i class="fas fa-image"></i> Image Resize</h3>
+        <p>Resize your images easily and quickly.</p>
+        <form id="image-form">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Browse</span>
+                    <input type="file" id="img">
+                </div>
+                <div class="file-path-wrapper">
+                    <input type="text" class="file-path validate" placeholder="Upload an image">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
